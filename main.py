@@ -25,7 +25,24 @@ print(f"Preço por unidade: {preco}")
 if qtde < 50:
     print(f"Estoque do produto {nomeP} está muito baixo! Providencie mais!")
 
-#Calcule o valor do produto com imposto que é o valor bruto mais 10% (imposto)
+# Calcule o valor do produto com imposto que é o valor bruto mais 10% (imposto)
 preco_com_imposto = preco * 1.1
 print(f"Preço total (com imposto): {preco_com_imposto}")
 
+# terceiro exemplo com python arrays
+# unico item
+fruta = "morango"
+print(fruta)
+
+# iniciar arrays frutas informando o nome das frutas selecionadas
+frutas = ["laranja", "maçã", "banana", "pêra"]
+
+# Exibir um conteudo do array inteiro
+print(frutas)
+
+# Exiba o nome da segunda fruta armazenada no array frutas
+print(frutas[1])
+
+# Quantas frutas temos no array frutas
+qtde_frutas = len(frutas)
+print(qtde_frutas)
