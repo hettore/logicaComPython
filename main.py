@@ -46,3 +46,38 @@ print(frutas[1])
 # Quantas frutas temos no array frutas
 qtde_frutas = len(frutas)
 print(qtde_frutas)
+
+# função append() adicionamos mais itens
+frutas.append("abacate")
+frutas.append("abacate")
+
+# quantas frutas temos?
+print(len(frutas))
+print(frutas)
+
+# quero apagar a quarta frutas (abacate) remove pelo indice
+frutas.pop(4)
+print(frutas)
+
+# adiciona romã a lista de frutas
+frutas.append("romã")
+
+# remove banana da lista de frutas remove pelo nome
+frutas.remove("banana")
+
+frutas.insert(1, "morango")
+
+# exibir na tela fruta a fruta percorrendo a lista com for each
+numerador = 1
+
+for fruta in frutas:
+    print(f"{numerador}a. fruta: {fruta}")
+    numerador += 1
+
+# ordenar em ordem alfabetica
+frutas_ordenadas = frutas.copy()
+frutas_ordenadas.sort()
+
+print(frutas_ordenadas)
+print(frutas)
+
