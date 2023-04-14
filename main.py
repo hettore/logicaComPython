@@ -246,3 +246,21 @@ def fatorial(numero):
   return total
 
 print(fatorial(5))
+
+# parte 15
+import csv
+
+with open("produtos.csv", newline='\n') as csvfile:
+  leitor = csv.reader(csvfile, delimiter=',')
+  next(leitor)
+
+  produtos = []
+  for linha in leitor:
+    produto = {
+        "codigo": int(linha[0]),
+        "nome": linha[1],
+        "preco": float(linha[2])
+    }
+    produtos.append(produto)
+
+print(produtos)
